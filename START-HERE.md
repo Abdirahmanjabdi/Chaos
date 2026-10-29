@@ -1,58 +1,45 @@
 # START HERE
 
-Fifteen minutes of setup today, then the system runs itself. You never need to plan a study day again.
+Nothing to install, nothing to plan. Open the card and get cracking. Right now the system is in **Phase 1 — land
+the role** ([JOB-HUNT.md](JOB-HUNT.md)): coding, system design and the tools on your CV, hardest first, every day.
 
 ---
 
-## 1. One-time setup (15 minutes)
+## 1. Today — five minutes, once
 
-- [ ] **Make the habit yours.** Open `system/config.toml` and set `identity`, `time`, `place` and `after` (your
-      habit stack) so they're *true for your life*. Then fill in "Your commitments" at the bottom of
-      [HABITS.md](HABITS.md).
-- [ ] **Install Anki** (free, [apps.ankiweb.net](https://apps.ankiweb.net)) and create an AnkiWeb account so your deck
-      syncs between this computer, any other computer, and your phone (AnkiDroid is free; AnkiMobile on iOS is paid).
-      Make one deck called `Chaos` with a subdeck per track.
-- [ ] **Sign a habit contract.** Copy `templates/habit-contract.md` to `review/contract.md`, fill it in, and ideally
-      get someone to sign it with you.
-- [ ] **Set a daily phone alarm** at your study time, labelled `today`.
-- [ ] **Check the computer:** in this folder run `today doctor` — every line should say `ok`.
-- [ ] There's a **"Start the day"** shortcut on your desktop. Double-click it at your cue time — it shows the card
-      and leaves a window open where you type `today done` when you finish. (On another Windows PC, double-click
-      `start-the-day.cmd` in the repo folder.)
-- [ ] **Remember the repo is public.** Raw trading/personal data goes in `data/` (git-ignored). Write-ups use
-      R-multiples and percentages — never balances, account numbers or P&L in currency.
+- [ ] Double-click **Start the day** on your desktop (or run `today` in this folder).
+- [ ] Run **`today rate`** and score yourself 1–5 on each CV-stack module. Be honest: the lowest one becomes your
+      first stack block. (2 minutes.)
+- [ ] Set a daily phone alarm at your study time, labelled `today` — the backstop for the habit stack ("after I pray
+      Isha, I run `today`").
 
-## 2. How every day works — three moves
+That's all. Then start block 1.
+
+## 2. Every day — three blocks, hardest first
 
 ```
-today        →  the card: your cue, a 5-10 min warm-up, the exact session, its link opens
-(study)      →  one deep block, 60-90 min, phone in another room
-today done   →  log one line, tick the session, streak +1, progress updated, pushed to GitHub
+today          →  the card: block 1 coding · block 2 system design · block 3 your weakest CV skill
+               →  block 1's link is already open: start the timer
+today done     →  after EACH block: minutes, one line, one takeaway, the score (e.g. 2/3) — logged, ticked, pushed
 ```
 
-That's the whole method. Bad day? Do the **two-minute version** on the card — open the link, do one problem. It
-counts. **Never miss two days in a row.**
+Bad day? Do block 1 only, or just its two-minute version. It counts. **Never miss two days in a row.**
 
-Useful extras: `today swap math` (do a different track today) · `today more` (a bonus block on your most neglected
-track) · `today week` (Sunday review) · `today status` (progress dashboard).
+Also: `today job applied 3` whenever you send applications · `today status` for the KPI table · `today week` on
+Sunday · `today swap design` to change what's next · `today more` for a bonus once all three are done.
 
-## 3. Your first week — install the habit, not the knowledge
+## 3. Your first week
 
-Week one has one goal: **show up every day**. The sessions you'll get are deliberately placements and orientations —
-each track's first session works out where you already are, so you can tick off what you know and start at the
-right rung.
+| Day | Block 1 — coding | Block 2 — design | Block 3 — CV stack |
+|---|---|---|---|
+| 1 | LC01.S01 — set up + 3 easies out loud | SD01.S01 — URL shortener cold (your baseline) | your weakest module — the question bank |
+| 2 | LC01.S02 — 4-pattern placement | SD01.S02 — your framework checklist | its first lab |
+| 3 | LC01.S03 — Big-O and Python's real costs | SD01.S03 — back-of-envelope drills | next lab |
+| 4–6 | LC02 — arrays & hashing | SD01.S04–S05, then SD02 | keep going |
+| 7 (Sun) | — | — | `today week` + `today rate` |
 
-| Day | What you'll get | What success looks like |
-|---|---|---|
-| Thu | Maths M01.S01 — a GCSE placement paper | You know where you stand in maths |
-| Fri | AI/ML A01.S01 — setup & orientation | A working notebook environment |
-| Sat | Systems S01.S01 — Linux + Bandit levels 0–5 | The shell feels a bit less foreign |
-| Sun | Finance E01.S01 — the economic way of thinking | First weekly review (`today week`) |
-| Mon | Maths M01.S02 — calculator placement | Tick off the topics you already own |
-| Tue | Systems S01.S02 — the shell, properly | Two Linux sessions down |
-| Wed | CS C01.S01 — Nand2Tetris orientation | Seven days, seven blocks. The chain is real. |
-
-Keep the blocks short this week if you need to — 30 minutes is fine. **Standardise before you optimise.**
+Week one has one goal: **show up every day**. The baselines (LC01.S02, SD01.S01, your first ratings) are the "before"
+picture — you'll beat them within a month, and the KPIs will show it.
 
 ## 4. On another computer
 
@@ -69,10 +56,13 @@ you finish, so every machine is always up to date.
 
 ## 5. Where everything is
 
-- [README.md](README.md) — the mission and the map
+- [JOB-HUNT.md](JOB-HUNT.md) — Phase 1: the three tracks, the KPIs, the finish line
 - [HABITS.md](HABITS.md) — why this works, and your commitments
-- [SYSTEM.md](SYSTEM.md) — the daily / weekly / monthly / quarterly loops and the schedule
-- [OPERATIONS.md](OPERATIONS.md) — what to do in every situation (stuck, missed a day, new module, using AI…)
-- [CURRICULUM.md](CURRICULUM.md) — the seven tracks and how modules work
-- [TRAJECTORY.md](TRAJECTORY.md) — where this goes in 1, 3, 5 and 10 years
-- [PROGRESS.md](PROGRESS.md) — your live dashboard (auto-generated)
+- [OPERATIONS.md](OPERATIONS.md) — what to do in every situation (stuck, missed a day, after an interview, AI…)
+- [SYSTEM.md](SYSTEM.md) — the daily / weekly / monthly loops
+- [CURRICULUM.md](CURRICULUM.md) — all ten tracks and how modules work
+- [TRAJECTORY.md](TRAJECTORY.md) — the decade plan, which starts once you've landed the role
+- [PROGRESS.md](PROGRESS.md) — your live dashboard and KPIs (auto-generated)
+
+> **The repo is public.** No company names, salaries, CVs, credentials, balances or P&L in it — counts and
+> percentages only. Private detail lives in `data/` (git-ignored) or a private tracker.

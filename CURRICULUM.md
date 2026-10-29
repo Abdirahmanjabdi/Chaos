@@ -1,13 +1,25 @@
 # CURRICULUM — the ladders
 
-Seven tracks. Each is a **ladder** of modules from a stated starting level to research level. Every module ends in a
-**gate artifact** — the committed thing that proves you cleared it. How fast each ladder is climbed is set by the
-weekly schedule in [SYSTEM.md](SYSTEM.md) and the spine in [TRAJECTORY.md](TRAJECTORY.md).
+Ten tracks: three for **Phase 1, landing the role**, and seven ladders for **the long path**. Every module ends in a
+**gate artifact**, the committed thing that proves you cleared it. Which tracks run, and how fast, is set by the
+phase in `system/config.toml`. See [SYSTEM.md](SYSTEM.md), [JOB-HUNT.md](JOB-HUNT.md) and [TRAJECTORY.md](TRAJECTORY.md).
 
 **Levels:** **F** foundation (KS3–GCSE) · **S** school-leaving (A-level + Further) · **U** undergraduate · **G** graduate ·
 **R** research edge.
 
-## The tracks
+## Phase 1 — land the role (every day, hardest first)
+
+| Track | Modules | Sessions | Score | Flagship gates along the way |
+|---|---|---|---|---|
+| [Coding Interviews](tracks/coding/curriculum.md) | 19 | 89 | unaided / attempted | NeetCode 150 with "why" docstrings · LRU cache by hand · 8 tested DevOps scripts · 3 passed mocks |
+| [System Design](tracks/design/curriculum.md) | 8 | 46 | rubric / 5 | framework checklist · 20+ scored designs · 8 infra/platform designs · matching engine · 4 mocks |
+| [The CV Stack](tracks/stack/curriculum.md) | 14 | 94 | clean answers / asked | a question bank per tool at 8/10 · labs rebuilding every CV claim · pitch + 8 STAR stories |
+
+The CV stack is **weakest first**: `today rate` scores each module 1–5 and the lowest comes next. The coding track
+overlaps the long-path programming G03 module, and the CV stack overlaps systems S01–S13, so both give you a head
+start on the long path.
+
+## The long path — the ladders
 
 | Track | Rungs | Modules | Sessions | Flagship gates along the way |
 |---|---|---|---|---|
@@ -19,7 +31,7 @@ weekly schedule in [SYSTEM.md](SYSTEM.md) and the spine in [TRAJECTORY.md](TRAJE
 | [Finance & Economics](tracks/finance-econ/curriculum.md) | F → R | 12 | 75 | DCF valuation · three-way option pricer · pricing library · VaR report · honest backtest |
 | [Physics](tracks/physics/curriculum.md) | F → R | 17 | 118 | pendulum experiment · double-pendulum chaos · Schrödinger solver · Ising phase transition |
 
-**Total: 114 modules, 807 sessions.** At roughly one session per study day — some take two blocks, graduate ones take
+**Long path: 114 modules, 807 sessions. With Phase 1: 155 modules, 1,036 sessions.** At roughly one session per study day — some take two blocks, graduate ones take
 more — that's the five-to-ten-year arc in [TRAJECTORY.md](TRAJECTORY.md). The research rungs (R) are open-ended by design.
 
 ## How a module is built
@@ -36,10 +48,11 @@ Every module in every `tracks/<track>/curriculum.md` follows the same shape (so 
 - [ ] M14.S01 — one deep block's worth of work, specific enough to start without thinking
 - [x] M14.S02 — a finished session is ticked and dated by `today done` (2026-11-03)
 **Gate artifact:** the committed proof that you cleared it
-**Anki seeds:** what's worth putting in the deck
+**Anki seeds:** optional — flashcard ideas, if you ever want them
 ```
 
-- **Work strictly top to bottom.** `today` serves the first unticked session; you never choose.
+- **Work top to bottom.** `today` serves the first unticked session; you never choose. (The exception is tracks
+  in `weakest_first`, which serve your lowest-rated module next.)
 - **Placement first.** Each rung opens with a placement session — tick what you already own, append `(placed out)`.
 - **Prerequisites cross tracks.** The comment line says which modules (in any track) a module builds on — e.g. AI/ML
   leans on maths M14–M16. If you hit a module before its prereq, `today swap` to the prerequisite first.

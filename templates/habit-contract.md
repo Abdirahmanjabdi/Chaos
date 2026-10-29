@@ -7,7 +7,7 @@ I, ______________________, commit to the daily learning habit described in SYSTE
 
 **Who I'm becoming:** I am ________________________________________________.
 
-**The habit:** after I ______________________, I run `today`, do the warm-up, and complete one deep block.
+**The habit:** after I ______________________, I run `today` and complete the day's blocks, hardest first (at minimum, block 1).
 
 **The minimum:** on bad days I do the two-minute version — ________________________ — and it counts.
 

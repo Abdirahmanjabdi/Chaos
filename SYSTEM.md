@@ -4,26 +4,42 @@ A ten-year goal is reached by a small loop you run almost every day, protected f
 enough to steer. This file is that loop. [HABITS.md](HABITS.md) explains why it's designed the way it is;
 [OPERATIONS.md](OPERATIONS.md) says what to do when anything goes sideways.
 
-It rests on three well-evidenced ideas: **spaced repetition** (beat forgetting), **deliberate practice** (work at the
-edge of your ability, with feedback), and **artifacts** (externalise understanding so it's testable and visible).
+It rests on three well-evidenced ideas: **deliberate practice** (work at the edge of your ability, with feedback),
+**measurement** (score every block, so feedback is a number, not a feeling), and **artifacts** (externalise
+understanding so it's testable and visible).
 
 ---
+
+## Phases
+
+The system runs one phase at a time (`system/config.toml` → `[phase] current`):
+
+- **`job-hunt` — now.** Every day is the same three blocks, hardest first: coding (60) → system design (45) → the CV
+  stack (45, weakest skill first). Finish line and KPIs: [JOB-HUNT.md](JOB-HUNT.md).
+- **`long-path` — after the role.** One deep block a day, the track picked by weekday (below), across the seven
+  long-path tracks in [TRAJECTORY.md](TRAJECTORY.md).
 
 ## The daily loop
 
 | Step | Time | What | Tool |
 |---|---|---|---|
 | Cue | — | your time, your place, after your anchor habit | `system/config.toml` |
-| Warm-up | 5–10 min | Anki reviews + one tiny "snack" rep | `today` |
-| Deep block | 60–90 min | the one session on the card — produce, don't just read | `today` opens it |
-| Close | 2 min | log, tick, streak, progress, commit, push | `today done` |
+| Blocks | 60 / 45 / 45 min | hardest first; produce, don't just read; first link already open | `today` |
+| Close each block | 2 min | log, **score**, tick, streak, KPIs, commit, push; names the next block | `today done` |
 
 **Floor, not ceiling.** The two-minute version (open the link, do one problem) counts on a bad day. **Never miss
-twice** — one miss is noise, two is a new habit. The card warns you the day after a miss.
+twice**: one miss is noise, two is a new habit. The card warns you the day after a miss.
 
-## The weekly schedule (Phase 1 — year one)
+## The feedback loop: KPIs
 
-`today` picks the track by weekday, so there's nothing to decide. Lists alternate week by week.
+Every block ends with a score (hit/asked). `today status`, `PROGRESS.md` and the weekly review turn that into a
+KPI table: last 7 days vs the 7 before, against your targets. The card names the KPI furthest behind. Each Sunday:
+**one KPI, one change to the system, one week**, then look again. That's how the system keeps improving rather
+than just running.
+
+## The weekly schedule (long-path phase)
+
+In the long path, `today` picks the track by weekday, so there's nothing to decide. Lists alternate week by week.
 
 | Mon | Tue | Wed | Thu | Fri | Sat | Sun |
 |---|---|---|---|---|---|---|
@@ -39,9 +55,10 @@ Each warm-up snack is matched to the day: Corbettmaths 5-a-day (Mon/Wed/Fri), Ex
 
 ## The weekly loop — steering (Sunday, 30–45 min)
 
-Run `today week`: it creates `review/weekly/YYYY-Www.md` pre-filled with days studied, hours, sessions completed and
-the takeaways you logged. You add: what landed, what didn't, the **Goldilocks check** (too easy / right / too hard),
-the week's artifact, next week's intention, and an if-then plan for the likely obstacle.
+Run `today week`: it creates `review/weekly/YYYY-Www.md` pre-filled with days studied, hours, the KPI table,
+sessions completed and the takeaways you logged. You add: what landed, what didn't, the **Goldilocks check**,
+the week's artifact, **one system change** for the KPI furthest behind, and an if-then plan for the likely obstacle.
+In the job hunt, finish with `today rate`.
 
 ## The monthly and quarterly loops — altitude
 
@@ -55,16 +72,17 @@ the week's artifact, next week's intention, and an if-then plan for the likely o
 ## How the curriculum is consumed
 
 Each track's `curriculum.md` is a list of **modules**, each a list of **sessions** sized for one deep block, ending
-in a **gate artifact**. `today` always serves the first unticked session of the scheduled track — strictly top to
-bottom, so you're never choosing. A session that takes two blocks just stays on the card until you tick it.
+in a **gate artifact**. `today` always serves the first unticked session, top to bottom, so you're never
+choosing. The one exception is the CV stack, which is **weakest first**: it finishes the module you've started, then
+moves to the one you rated lowest. A session that takes two blocks just stays on the card until you tick it.
 Placement sessions at the start of each rung let you tick off what you already own. See [CURRICULUM.md](CURRICULUM.md).
 
 ## Methods, matched to the material
 
 | Material | Method | Where |
 |---|---|---|
-| Facts, definitions, theorems, formulas, syntax | **Spaced repetition** — Anki, daily | the warm-up; module "Anki seeds" |
-| Skills — solving, proving, coding, debugging | **Deliberate practice** at the edge, with feedback | the deep block |
+| Skills — solving, proving, coding, debugging | **Deliberate practice** at the edge, timed, scored | the blocks |
+| Things you got wrong | **Retrieval & redo** — re-solve from blank days later | `redo.md`, the redo sessions, question banks |
 | Understanding — does it connect? can I explain it? | **The Feynman test** — explain it to a novice | module notes |
 | Synthesis — does it all work together? | **Projects** | gate artifacts, `projects/` |
 | Why a decision was made | **ADRs & postmortems** | `templates/adr.md` |
@@ -75,7 +93,6 @@ Placement sessions at the start of each rung let you tick off what you already o
 
 - **`today`** (`tools/today.py`) — the daily driver. Standard-library Python, reads only the markdown; no database.
 - **Git + GitHub** — the progress ledger and the sync between computers. Every study day is a commit.
-- **Anki + AnkiWeb** — the spaced-repetition deck, synced to your phone.
 - **Markdown + LaTeX** — notes and write-ups; `$...$` maths renders on GitHub.
 
 ## Guardrails — how ten-year plans die, and the defence
@@ -86,8 +103,9 @@ Placement sessions at the start of each rung let you tick off what you already o
 | Decision fatigue ("what should I study?") | the schedule + strictly-ordered sessions; `today` decides |
 | Shiny-topic drift | fixed schedule; breadth goes in `today more` and curiosity blocks |
 | Over-ambition → burnout | 90 min is the target, two minutes is the floor; never the reverse |
-| Silent forgetting | the daily deck |
-| Invisible progress → lost motivation | streak, compounding number, PROGRESS.md bars, green squares |
+| Silent forgetting | redo sessions, question banks re-answered cold, weekly re-rating |
+| Busy but not better | a score on every block; the KPI furthest behind gets one system change a week |
+| Invisible progress → lost motivation | streak, compounding number, KPI trends, PROGRESS.md bars, green squares |
 | Boredom (the real killer) | variety by weekday, the Goldilocks check, play built into the curriculum |
 
 > The goal of this file is to make the right action the default action, on a bad day, with no willpower left.

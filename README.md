@@ -7,20 +7,23 @@ science, systems, AI, finance and physics — not in a sprint, but through a sma
 **The repo is the credential.** Not certificates or course counts: a decade-deep, public, version-controlled body
 of work that *shows* the understanding — derived results, built systems, measured benchmarks, and write-ups of *why*.
 
-> **New here? → [START-HERE.md](START-HERE.md).** Fifteen minutes of setup, then the system runs itself.
+> **New here? → [START-HERE.md](START-HERE.md).** Five minutes, then the system runs itself.
+
+> **Now: Phase 1 — land the role ([JOB-HUNT.md](JOB-HUNT.md)).** Every day: coding → system design → the tools on
+> my CV, hardest first, each scored and tracked as a KPI. The decade plan below starts once I've landed it.
 
 ---
 
 ## The whole method, in three moves
 
 ```
-today        the card: cue, a 5-10 min warm-up, the exact session, its link opens
-(study)      one deep block, 60-90 minutes, phone in another room
-today done   log one line, tick the session, streak +1, PROGRESS.md updated, pushed to GitHub
+today        the card: the cue, the day's blocks hardest first, the exact session for each, the first link open
+(study)      the blocks — timer on, out loud, phone in another room
+today done   after each block: one line, a score, the session ticked, streak and KPIs updated, pushed to GitHub
 ```
 
-You never decide what to study — the curriculum and the weekly schedule already did. On a bad day, the two-minute
-version counts. **Never miss twice.** Live progress: **[PROGRESS.md](PROGRESS.md)**.
+You never decide what to study. The curriculum and the phase already did. On a bad day, the two-minute version
+counts. **Never miss twice.** Live progress and KPIs: **[PROGRESS.md](PROGRESS.md)**.
 
 ## The three rules
 
@@ -33,8 +36,17 @@ version counts. **Never miss twice.** Live progress: **[PROGRESS.md](PROGRESS.md
 
 ## The curriculum
 
-Seven tracks, **114 modules, 807 sessions**, each laddered from foundation to research level
-([CURRICULUM.md](CURRICULUM.md)):
+Ten tracks, **155 modules, 1,036 sessions** ([CURRICULUM.md](CURRICULUM.md)).
+
+**Phase 1 — land the role** (now, every day, in this order):
+
+| Track | What it covers | Modules |
+|---|---|---|
+| [Coding Interviews](tracks/coding/curriculum.md) | the NeetCode 150 in Python, practical DevOps/SRE scripting rounds, mocks | 19 |
+| [System Design](tracks/design/curriculum.md) | the framework, building blocks, classic designs, infra/platform, SRE, low latency, mocks | 8 |
+| [The CV Stack](tracks/stack/curriculum.md) | every tool on my CV, interview-deep, weakest first — plus my story | 14 |
+
+**The long path** (after the role, each laddered from foundation to research level):
 
 | Track | From → to | Modules |
 |---|---|---|
@@ -53,6 +65,7 @@ Nearly every resource is free; paid books are marked and optional.
 | File | What it's for |
 |---|---|
 | [START-HERE.md](START-HERE.md) | Setup and your first week |
+| [JOB-HUNT.md](JOB-HUNT.md) | Phase 1: the three tracks, the KPIs, the finish line |
 | [HABITS.md](HABITS.md) | The *Atomic Habits* design behind the system — and your commitments |
 | [SYSTEM.md](SYSTEM.md) | The daily, weekly, monthly and quarterly loops; the schedule |
 | [OPERATIONS.md](OPERATIONS.md) | The playbook: stuck, missed a day, new module, using AI, slumps, new computer |
@@ -67,10 +80,10 @@ Nearly every resource is free; paid books are marked and optional.
 Chaos/
 ├── start-the-day.cmd       double-click: today's card + a window ready for `today done` (Windows)
 ├── today.cmd / today.sh    the daily driver (Windows / macOS-Linux) → tools/today.py
-├── system/config.toml      your habit settings and the weekly schedule
-├── tracks/<track>/         curriculum.md (modules + sessions) and your module notes
+├── system/config.toml      your habit settings, the phase and its blocks, KPI targets, the weekly schedule
+├── tracks/<track>/         curriculum.md (modules + sessions), notes, solutions, designs, labs
 ├── projects/               flagship projects that cross tracks (DataPulse)
-├── logs/                   one file per month, written by `today done` — the evidence
+├── logs/                   one file per month (`today done`), ratings (`today rate`), job counts (`today job`)
 ├── review/                 weekly / monthly / quarterly reviews
 └── templates/              topic note, ADR, reviews, habit contract
 ```

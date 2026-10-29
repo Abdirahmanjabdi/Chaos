@@ -16,6 +16,20 @@ build/
 *.pem
 secrets/
 
+# lab infrastructure state & credentials (tracks/stack/labs) — state files can hold secrets in plain text
+.terraform/
+*.tfstate
+*.tfstate.*
+*.tfvars
+!*.example.tfvars
+crash.log
+kubeconfig*
+*.kubeconfig
+.aws/
+credentials
+*.vault-token
+.vault-token
+
 # data & models — too big / not source
 data/
 *.db
@@ -30,9 +44,6 @@ Thumbs.db
 .idea/
 .vscode/
 *.swp
-
-# Anki exports are generated, not source
-*.apkg
 
 # today's local swap/bonus choice - per computer, never synced
 logs/.today.json

@@ -8,13 +8,57 @@ time          = "22:00"                      # the backstop; the prayer is the r
 place         = "at my bedroom desk"         # upright at the desk, never in bed
 after         = "I pray Isha"                # habit stack: "After <this>, I run `today`."
 day_starts    = "04:00"                      # a block closed before 04:00 counts for the night before
-block_minutes = 75                           # the deep-block target (60-90 is the sweet spot)
+block_minutes = 75                           # the long-path deep block (job-hunt blocks set their own below)
 minimum       = "open the first link and do ONE problem - that counts as showing up"   # the two-minute version
 
-[warmup]
-anki = "Clear today's Anki reviews (5-10 min). AnkiWeb syncs your phone and every computer."
+# ---------------------------------------------------------------------------------------------- the phase
+# Phase 1, "job-hunt" (now): land the role. Every day is the same list of blocks, HARDEST FIRST - no deciding.
+# When the finish line in PROGRESS.md is all ticked (or an offer is in hand), set current = "long-path"
+# and the decade plan below (the weekday schedule across all seven long-path tracks) takes over.
+[phase]
+current = "job-hunt"
 
-# One tiny rep before the deep block: easy to start, hard to say no to. "Name | link".
+[phase.job-hunt]
+blocks = [
+  { track = "coding", minutes = 60 },   # 1. hardest: DSA in Python, timed, out loud
+  { track = "design", minutes = 45 },   # 2. system design: one 45-minute design, scored on the rubric
+  { track = "stack",  minutes = 45 },   # 3. the tools on your CV, weakest first
+]
+
+# The finish line for the phase (checked over the last `window_days`):
+[phase.job-hunt.exit]
+window_days = 28
+complete    = ["coding"]                       # the NeetCode 150 + practical rounds, done
+score       = { coding = 0.8, design = 0.8 }   # unaided rate / rubric hit rate
+rating      = { stack = 4 }                    # every CV-stack module rated 4+ ("can build and debug it")
+
+# ---------------------------------------------------------------------------------------------- KPIs
+# What gets measured gets improved. `today status` shows the table; the card shows the one furthest behind;
+# every Sunday `today week` asks for ONE system change aimed at that KPI. Nudge targets up as you hit them.
+[kpi.targets]
+days_per_week         = 6
+blocks_per_week       = 15
+hours_per_week        = 14
+applications_per_week = 10
+interviews_per_week   = 1
+
+[kpi.targets.sessions]     # sessions finished per week
+coding = 6
+design = 4
+stack  = 5
+
+[kpi.targets.score]        # hit rate from the Score you give at `today done`
+coding = 0.6               # start honest; raise towards the 0.8 finish line
+design = 0.7
+stack  = 0.8
+
+[kpi.score_prompt]         # what the Score means, per track (shown on the card and at `today done`)
+coding = "problems solved unaided / attempted, e.g. 2/3"
+design = "rubric points hit / 5 (concept sessions: ideas explained / ideas)"
+stack  = "questions answered cleanly out loud / asked (labs: goals hit / goals)"
+
+# ---------------------------------------------------------------------------------------------- long path
+# Used when phase.current = "long-path". A one-line "snack" before the deep block, per weekday ("Name | link").
 [warmup.snack]
 monday    = "Corbettmaths 5-a-day (pick your level) | https://corbettmaths.com/5-a-day/"
 tuesday   = "One Exercism exercise (writing code daily) | https://exercism.org/tracks/python"
@@ -25,8 +69,6 @@ saturday  = "One OverTheWire Bandit level | https://overthewire.org/wargames/ban
 sunday    = "One Isaac Physics problem | https://isaacphysics.org"
 
 # Weekday -> track. A list alternates week by week (odd/even ISO week).
-# Phase 1 (year 1): maths is the bottleneck for everything, systems is the job-ready track. Re-weight each quarter
-# at the gate check as the trajectory moves on. Bonus blocks (`today more`) go to whatever's most neglected.
 [schedule]
 monday    = "math"
 tuesday   = "systems"
@@ -37,8 +79,9 @@ saturday  = ["systems", "finance-econ"]
 sunday    = ["finance-econ", "physics"]   # lighter day; also the weekly review (`today week`)
 
 [tracks]
-order = ["math", "systems", "programming", "cs", "ai-ml", "finance-econ", "physics"]
-spine = ["math", "systems", "programming", "cs", "ai-ml", "finance-econ"]
+order         = ["coding", "design", "stack", "math", "systems", "programming", "cs", "ai-ml", "finance-econ", "physics"]
+spine         = ["math", "systems", "programming", "cs", "ai-ml", "finance-econ"]
+weakest_first = ["stack"]   # served lowest-rated module first (`today rate`), not top to bottom
 
 [git]
 pull_on_start = true    # sync from GitHub when you run `today` (picks up work done on another computer)
@@ -46,4 +89,4 @@ auto_commit   = true    # `today done` commits the log + ticked session
 auto_push     = true    # ...and pushes, so every device sees it
 
 [open]
-first_link = true       # open today's first link in the browser when you run `today`
+first_link = true       # open the first block's link in the browser when you run `today`

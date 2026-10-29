@@ -18,4 +18,4 @@ The working understanding, in my own words. Maths in `$...$`. The Feynman test: 
 The committed deliverable: the proof set / program / benchmark / essay. Link it. **No artifact = topic not done.**
 
 ## Open questions
-What I still don't get, or deliberately deferred. These become future rungs or deck cards.
+What I still don't get, or deliberately deferred. These become future rungs or redo sessions.

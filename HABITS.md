@@ -82,8 +82,8 @@ The habit that's easiest to start wins. Reduce friction for the good habit; add 
   nothing to remember.
 - **Free resources, ready everywhere.** Nearly every session links to a free resource, and the whole repo is on
   GitHub, so any computer is a study computer.
-- **Standardise before you optimise.** For the first two weeks, success is *just showing up* — warm-up plus whatever
-  block you manage. The full 75 minutes comes once the cue → action link is automatic.
+- **Standardise before you optimise.** For the first two weeks, success is *just showing up* — block 1 plus whatever
+  else you manage. All three blocks come once the cue → action link is automatic.
 - **Prepare the environment the night before.** Close every tab, leave the notebook open, glance at "Up next".
 - **Make the bad habits hard.** Phone in another room during the block. Log out of social apps on the study machine,
   or use a site blocker for the block's duration. Friction is a tool: add it where you want less behaviour.

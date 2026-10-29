@@ -6,7 +6,7 @@ set "PATH=%~dp0;%PATH%"
 title Chaos - today
 call "%~dp0today.cmd"
 echo.
-echo   When you've finished the block, type:   today done
-echo   Other commands: today more ^| today swap TRACK ^| today week ^| today status
+echo   After EACH block, type:   today done
+echo   Other commands: today job applied N ^| today rate ^| today status ^| today week ^| today more
 echo.
 cmd /k
