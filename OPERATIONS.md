@@ -3,6 +3,10 @@
 Every situation you'll hit over ten years, with exactly what to do. When something feels off, find it here instead
 of improvising. Each operation is short on purpose.
 
+> **This repo is public.** Keep raw personal and trading data in `data/` — it's git-ignored and never leaves your
+> machine. In write-ups and gate artifacts, use normalised numbers (R-multiples, percentages, win rates, Sharpe) —
+> **never** account balances, account numbers, or P&L in currency. Nothing private goes in the logs either.
+
 **Contents:** [Start the day](#start-the-day) · [Close the day](#close-the-day) · [The two-minute day](#the-two-minute-day)
 · [Restart after missed days](#restart) · [Swap or bonus](#swap-or-bonus) · [Module kickoff](#module-kickoff)
 · [Module close-out](#module-close-out) · [When you're stuck](#when-youre-stuck) · [Using AI without cheating yourself](#using-ai-without-cheating-yourself)

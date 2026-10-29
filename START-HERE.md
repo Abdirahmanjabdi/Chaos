@@ -16,7 +16,11 @@ Fifteen minutes of setup today, then the system runs itself. You never need to p
       get someone to sign it with you.
 - [ ] **Set a daily phone alarm** at your study time, labelled `today`.
 - [ ] **Check the computer:** in this folder run `today doctor` — every line should say `ok`.
-- [ ] There's a **"Start the day"** shortcut on your desktop. Double-click it at your cue time.
+- [ ] There's a **"Start the day"** shortcut on your desktop. Double-click it at your cue time — it shows the card
+      and leaves a window open where you type `today done` when you finish. (On another Windows PC, double-click
+      `start-the-day.cmd` in the repo folder.)
+- [ ] **Remember the repo is public.** Raw trading/personal data goes in `data/` (git-ignored). Write-ups use
+      R-multiples and percentages — never balances, account numbers or P&L in currency.
 
 ## 2. How every day works — three moves
 

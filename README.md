@@ -65,6 +65,7 @@ Nearly every resource is free; paid books are marked and optional.
 
 ```
 Chaos/
+├── start-the-day.cmd       double-click: today's card + a window ready for `today done` (Windows)
 ├── today.cmd / today.sh    the daily driver (Windows / macOS-Linux) → tools/today.py
 ├── system/config.toml      your habit settings and the weekly schedule
 ├── tracks/<track>/         curriculum.md (modules + sessions) and your module notes
