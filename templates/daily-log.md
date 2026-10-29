@@ -1,9 +1,11 @@
-<!-- Copy one block per study day into logs/YYYY-MM.md. Keep it to a few lines. The point is the streak + one honest thought, not a diary. -->
+<!-- `today done` writes these for you. This is the format, if you ever need to add an entry by hand to
+     logs/YYYY-MM.md (e.g. you studied on a computer without Python). Keep the field names exactly as below —
+     `today` reads them to compute the streak, the hours and the "last studied" dates. -->
 
 ### YYYY-MM-DD · Day N
-- **Track / topic:** <e.g. math/linear-algebra — eigenvalues>
-- **Block (min):** <60–90>
-- **Did:** <the concrete thing — problems 1–8, built X, derived Y>
-- **Understood / stuck:** <the one real takeaway, or the wall you hit>
-- **Deck:** <reviewed · N new cards added>
-- **Artifact:** <link/path if the day produced one, else —>
+- **Track / topic:** math · M02.S04 — Rearranging formulae
+- **Block (min):** 75
+- **Did:** the concrete thing — e.g. Dr Frost rearranging set, 30 questions
+- **Understood / stuck:** the one real takeaway, or the wall you hit
+- **Deck:** reviewed
+- **Artifact:** path or link, or —

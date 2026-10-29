@@ -33,3 +33,6 @@ Thumbs.db
 
 # Anki exports are generated, not source
 *.apkg
+
+# today's local swap/bonus choice - per computer, never synced
+logs/.today.json

@@ -1,0 +1,3 @@
+#!/usr/bin/env sh
+# Start or close the day (macOS / Linux / WSL):  ./today.sh | ./today.sh done | ./today.sh swap TRACK | ...
+exec python3 "$(dirname "$0")/tools/today.py" "$@"

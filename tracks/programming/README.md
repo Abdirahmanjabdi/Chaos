@@ -1,8 +1,10 @@
 # Track: Programming & Algorithms
 
-Multi-paradigm fluency + algorithmic sharpness. Python → C → Rust → SQL → a functional language.
+The craft: idiomatic Python, then C, Rust, SQL, OCaml and C++, plus algorithmic pattern fluency.
 
-- **Ladder & gates:** see [CURRICULUM §4](../../CURRICULUM.md#4-programming--algorithms--the-craft)
-- **Current rung:** Python-fluent; next is C then Rust (the low-latency edge).
-- **Convention:** each language earns a small real library/tool with tests; algorithms live in `problems/` with
-  *written reasoning*, not just passing tests. Existing practice work is in `../../practice/`.
+- **The curriculum:** [curriculum.md](curriculum.md) — every module, its sessions, resources and gate artifact.
+- **Where you are:** see [PROGRESS.md](../../PROGRESS.md) (updated by `today done`), or run `today status`.
+- **Your notes:** one folder per module here, e.g. `programming/<module-id>/`, started from
+  [templates/topic.md](../../templates/topic.md) at the module kickoff. Gate artifacts are committed into it.
+- **Changing it:** edit `curriculum.md` freely, then run `today doctor` (rules in
+  [OPERATIONS.md](../../OPERATIONS.md#editing-the-curriculum)).

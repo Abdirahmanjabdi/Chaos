@@ -1,8 +1,10 @@
 # Track: Physics
 
-GCSE → research level. The disciplined secondary (unless you choose it as the spine) — best training in modelling.
+GCSE → research level. The disciplined secondary: the best training in mathematical modelling of the real world.
 
-- **Ladder & gates:** see [CURRICULUM §2](../../CURRICULUM.md#2-physics--the-best-training-in-mathematical-modelling-of-the-real-world)
-- **Current rung:** _to calibrate_
-- **Convention:** one folder per topic; artifacts are derivations, simulations (projectiles, double pendulum, Ising),
-  and problem sets. Needs the maths track as prerequisite.
+- **The curriculum:** [curriculum.md](curriculum.md) — every module, its sessions, resources and gate artifact.
+- **Where you are:** see [PROGRESS.md](../../PROGRESS.md) (updated by `today done`), or run `today status`.
+- **Your notes:** one folder per module here, e.g. `physics/<module-id>/`, started from
+  [templates/topic.md](../../templates/topic.md) at the module kickoff. Gate artifacts are committed into it.
+- **Changing it:** edit `curriculum.md` freely, then run `today doctor` (rules in
+  [OPERATIONS.md](../../OPERATIONS.md#editing-the-curriculum)).

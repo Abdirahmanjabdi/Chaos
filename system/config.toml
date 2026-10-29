@@ -1,0 +1,48 @@
+# system/config.toml - the only settings file. `today` reads it on every run; edit it any time.
+# The [habit] block is your implementation intention and habit stack (HABITS.md). Make it TRUE for your life:
+# a cue you already do every single day, a time you can actually keep, a place where the work is waiting.
+
+[habit]
+identity      = "I am a scientist-engineer who learns something hard every day."
+time          = "07:00"
+place         = "at my desk"
+after         = "I make my morning coffee"   # habit stack: "After <this>, I run `today`."
+block_minutes = 75                           # the deep-block target (60-90 is the sweet spot)
+minimum       = "open the first link and do ONE problem - that counts as showing up"   # the two-minute version
+
+[warmup]
+anki = "Clear today's Anki reviews (5-10 min). AnkiWeb syncs your phone and every computer."
+
+# One tiny rep before the deep block: easy to start, hard to say no to. "Name | link".
+[warmup.snack]
+monday    = "Corbettmaths 5-a-day (pick your level) | https://corbettmaths.com/5-a-day/"
+tuesday   = "One Exercism exercise (writing code daily) | https://exercism.org/tracks/python"
+wednesday = "Corbettmaths 5-a-day | https://corbettmaths.com/5-a-day/"
+thursday  = "One Exercism exercise | https://exercism.org/tracks/python"
+friday    = "Corbettmaths 5-a-day | https://corbettmaths.com/5-a-day/"
+saturday  = "One OverTheWire Bandit level | https://overthewire.org/wargames/bandit/"
+sunday    = "One Isaac Physics problem | https://isaacphysics.org"
+
+# Weekday -> track. A list alternates week by week (odd/even ISO week).
+# Phase 1 (year 1): maths is the bottleneck for everything, systems is the job-ready track. Re-weight each quarter
+# at the gate check as the trajectory moves on. Bonus blocks (`today more`) go to whatever's most neglected.
+[schedule]
+monday    = "math"
+tuesday   = "systems"
+wednesday = ["programming", "cs"]
+thursday  = "math"
+friday    = "ai-ml"
+saturday  = ["systems", "finance-econ"]
+sunday    = ["finance-econ", "physics"]   # lighter day; also the weekly review (`today week`)
+
+[tracks]
+order = ["math", "systems", "programming", "cs", "ai-ml", "finance-econ", "physics"]
+spine = ["math", "systems", "programming", "cs", "ai-ml", "finance-econ"]
+
+[git]
+pull_on_start = true    # sync from GitHub when you run `today` (picks up work done on another computer)
+auto_commit   = true    # `today done` commits the log + ticked session
+auto_push     = true    # ...and pushes, so every device sees it
+
+[open]
+first_link = true       # open today's first link in the browser when you run `today`

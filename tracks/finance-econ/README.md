@@ -1,9 +1,10 @@
 # Track: Finance & Economics
 
-Economics → finance → quant (stochastic calculus, pricing, risk, microstructure). Turns trading intuition into rigour.
+Economics → corporate finance → markets → derivatives → quant → risk → microstructure → honest systematic trading.
 
-- **Ladder & gates:** see [CURRICULUM §7](../../CURRICULUM.md#7-finance--economics--the-application-domain-and-the-quant-edge)
-- **Current rung:** active discretionary trader (VoidCodex / MT5); next is the economics + finance foundations and a
-  first *honest* backtest.
-- **Convention:** artifacts are pricers, backtests with honest statistics (no look-ahead/survivorship), and essays.
-  Shares stochastic calculus with the maths track and latency concerns with systems.
+- **The curriculum:** [curriculum.md](curriculum.md) — every module, its sessions, resources and gate artifact.
+- **Where you are:** see [PROGRESS.md](../../PROGRESS.md) (updated by `today done`), or run `today status`.
+- **Your notes:** one folder per module here, e.g. `finance-econ/<module-id>/`, started from
+  [templates/topic.md](../../templates/topic.md) at the module kickoff. Gate artifacts are committed into it.
+- **Changing it:** edit `curriculum.md` freely, then run `today doctor` (rules in
+  [OPERATIONS.md](../../OPERATIONS.md#editing-the-curriculum)).

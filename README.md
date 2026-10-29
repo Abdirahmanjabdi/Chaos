@@ -1,62 +1,77 @@
 # Chaos — a decade of deliberate learning, in public
 
-This is a single, long-lived repository for going from where I am now to research-level depth across
-computing, mathematics, physics, finance, and AI — not in a weekend, but over 5–10 years of compounding daily work.
+One long-lived repository for going from where I am now to research-level depth across mathematics, computer
+science, systems, AI, finance and physics — not in a sprint, but through a small daily habit that compounds for
+5–10 years.
 
-**The repo is the credential.** Not a certificate, not a course count — a decade-deep, public, version-controlled
-body of work that *shows* the understanding. Anyone can watch a lecture. What this repo proves is that I can derive
-the result, build the thing, measure it, and write up *why*.
+**The repo is the credential.** Not certificates or course counts: a decade-deep, public, version-controlled body
+of work that *shows* the understanding — derived results, built systems, measured benchmarks, and write-ups of *why*.
 
----
-
-## The three rules that make it work
-
-1. **Artifacts, not exposure.** "I studied X" means nothing. Every topic ends in something committed: a worked
-   proof, a solved problem set, a built program, a benchmark with numbers, an essay that explains the hard part. If
-   it isn't written down, it didn't happen. (This rule is borrowed from the DataPulse roadmap and now governs
-   everything.)
-2. **Consistency over intensity.** A 90-minute block every day beats a 10-hour Sunday. 90 min/day is ~550 hours a
-   year; in five years that is a graduate education. The [SYSTEM](SYSTEM.md) exists to protect the daily block and
-   let it compound. Missing a day is allowed; missing two in a row is the thing to never do.
-3. **Depth on a spine, literacy on the rest.** Trying to reach PhD level in six fields at once guarantees shallow
-   everywhere. Pick a spine, go deep, and let the overlaps carry the breadth — linear algebra pays off in ML,
-   physics, and graphics; stochastic calculus serves both quant finance and diffusion models; Rust serves systems,
-   low-latency, and the fintech edge. See [TRAJECTORY](TRAJECTORY.md) for the chosen spine.
+> **New here? → [START-HERE.md](START-HERE.md).** Fifteen minutes of setup, then the system runs itself.
 
 ---
 
-## How the repo is organised
+## The whole method, in three moves
 
 ```
-chaos/
-├── README.md         ← you are here: the mission
-├── SYSTEM.md         ← the daily/weekly/quarterly engine (read this second)
-├── CURRICULUM.md     ← every subject, its ladder from my start level to research level, tools, gate artifacts
-├── TRAJECTORY.md     ← 1 / 3 / 5 / 10-year milestones tied to who I want to become
-├── logs/             ← the daily log (one file per month) + the streak. Evidence of the habit.
-├── review/           ← weekly / monthly / quarterly retrospectives
-├── templates/        ← reusable skeletons: daily log entry, topic note, ADR, artifact write-up
-├── tracks/           ← one folder per domain; each has a README with its ladder + my current rung
-│   ├── math/         ← Year 9 → PhD-level
-│   ├── physics/      ← GCSE → PhD-level
-│   ├── cs/           ← computer science, deep (architecture → distributed systems → PL/theory)
-│   ├── programming/  ← languages + algorithms as a craft (Python, C, Rust, SQL, a functional one)
-│   ├── systems/      ← Linux, Docker, K8s, AWS, cloud, networking, SRE
-│   ├── ai-ml/        ← classical ML → deep learning → modern (LLMs/RL), built from scratch
-│   └── finance-econ/ ← economics → finance → quant (stochastic calculus, pricing, microstructure)
-└── projects/         ← flagship projects that cross tracks and prove it all works together
-    └── datapulse/    ← the applied SRE / low-latency flagship (see ROADMAP.md)
+today        the card: cue, a 5-10 min warm-up, the exact session, its link opens
+(study)      one deep block, 60-90 minutes, phone in another room
+today done   log one line, tick the session, streak +1, PROGRESS.md updated, pushed to GitHub
 ```
 
-Each `tracks/<name>/` folder holds one subfolder per topic, following `templates/topic.md`: what I set out to learn,
-the artifact I produced, and the open questions I left. The git history across these folders *is* the progress bar.
+You never decide what to study — the curriculum and the weekly schedule already did. On a bad day, the two-minute
+version counts. **Never miss twice.** Live progress: **[PROGRESS.md](PROGRESS.md)**.
 
----
+## The three rules
 
-## How to use it day to day
+1. **Artifacts, not exposure.** Every module ends in a committed *gate artifact* — a proof, a program, a benchmark, an
+   essay. No artifact, not done.
+2. **Consistency over intensity.** 90 minutes a day ≈ 550 hours a year ≈ a graduate education in five. The habit
+   *is* the plan. ([HABITS.md](HABITS.md) is how it's designed to stick.)
+3. **Depth on a spine, literacy on the rest.** Spine: CS & systems · maths · AI/ML · quant finance — converging on
+   low-latency, ML-driven markets. Physics is the disciplined secondary. ([TRAJECTORY.md](TRAJECTORY.md))
 
-Open [SYSTEM.md](SYSTEM.md) and run the daily loop. That's the whole method: show up, do one focused block on the
-current spine topic, review the deck, log one line, commit. The curriculum tells you *what*; the system makes you
-*keep doing it*; the trajectory tells you *why* and *where it goes*.
+## The curriculum
 
-> Status: **Day 0.** Foundations being laid. The first real entry in `logs/` is the first day this becomes true.
+Seven tracks, **114 modules, 807 sessions**, each laddered from foundation to research level
+([CURRICULUM.md](CURRICULUM.md)):
+
+| Track | From → to | Modules |
+|---|---|---|
+| [Mathematics](tracks/math/curriculum.md) | Year 9 → measure theory, stochastic calculus, research | 29 |
+| [Systems & Infrastructure](tracks/systems/curriculum.md) | Linux → K8s, AWS, SRE, low latency (= DataPulse) | 15 |
+| [Programming & Algorithms](tracks/programming/curriculum.md) | Python properly → C, Rust, SQL, OCaml, C++ | 11 |
+| [Computer Science](tracks/cs/curriculum.md) | NAND gates → compilers, OS, Raft, formal methods | 17 |
+| [AI & Machine Learning](tracks/ai-ml/curriculum.md) | NumPy → GPT from scratch, RL, diffusion, research | 13 |
+| [Finance & Economics](tracks/finance-econ/curriculum.md) | micro/macro → derivatives, quant, microstructure | 12 |
+| [Physics](tracks/physics/curriculum.md) | GCSE → Lagrangian, QM, GR, QFT | 17 |
+
+Nearly every resource is free; paid books are marked and optional.
+
+## The documents
+
+| File | What it's for |
+|---|---|
+| [START-HERE.md](START-HERE.md) | Setup and your first week |
+| [HABITS.md](HABITS.md) | The *Atomic Habits* design behind the system — and your commitments |
+| [SYSTEM.md](SYSTEM.md) | The daily, weekly, monthly and quarterly loops; the schedule |
+| [OPERATIONS.md](OPERATIONS.md) | The playbook: stuck, missed a day, new module, using AI, slumps, new computer |
+| [CURRICULUM.md](CURRICULUM.md) | How the tracks, modules, sessions and gates work |
+| [TRAJECTORY.md](TRAJECTORY.md) | Where this goes at 1, 3, 5 and 10 years |
+| [PROGRESS.md](PROGRESS.md) | The live dashboard (written by `today`) |
+| [ROADMAP.md](ROADMAP.md) | DataPulse, the Systems-track flagship project |
+
+## Layout
+
+```
+Chaos/
+├── today.cmd / today.sh    the daily driver (Windows / macOS-Linux) → tools/today.py
+├── system/config.toml      your habit settings and the weekly schedule
+├── tracks/<track>/         curriculum.md (modules + sessions) and your module notes
+├── projects/               flagship projects that cross tracks (DataPulse)
+├── logs/                   one file per month, written by `today done` — the evidence
+├── review/                 weekly / monthly / quarterly reviews
+└── templates/              topic note, ADR, reviews, habit contract
+```
+
+Standard-library Python 3.11+ and Git — nothing else to install. Clone it on any computer and `today` just works.

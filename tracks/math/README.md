@@ -1,8 +1,10 @@
 # Track: Mathematics
 
-Year 9 → research level. The load-bearing track — prioritise it; it pays off in physics, ML, quant, and CS.
+Year 9 → research level. The load-bearing track — physics, ML, quant and CS are all written in it.
 
-- **Ladder & gates:** see [CURRICULUM §1](../../CURRICULUM.md#1-mathematics--the-language-everything-else-is-written-in)
-- **Current rung:** _to calibrate_ (tell me where you actually are)
-- **Convention:** one folder per topic from `templates/topic.md` (e.g. `linear-algebra/`, `real-analysis/`), each
-  ending in a committed artifact — a proof set, a derivation, or a small NumPy/SymPy program.
+- **The curriculum:** [curriculum.md](curriculum.md) — every module, its sessions, resources and gate artifact.
+- **Where you are:** see [PROGRESS.md](../../PROGRESS.md) (updated by `today done`), or run `today status`.
+- **Your notes:** one folder per module here, e.g. `math/<module-id>/`, started from
+  [templates/topic.md](../../templates/topic.md) at the module kickoff. Gate artifacts are committed into it.
+- **Changing it:** edit `curriculum.md` freely, then run `today doctor` (rules in
+  [OPERATIONS.md](../../OPERATIONS.md#editing-the-curriculum)).

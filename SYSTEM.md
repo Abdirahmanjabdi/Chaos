@@ -1,90 +1,94 @@
 # SYSTEM — the engine that makes a decade compound
 
-A ten-year goal is not reached by motivation. It is reached by a small loop you run almost every day, protected from
-your own moods, with feedback often enough to correct course. This file is that loop. If you only ever read one page
-of this repo, read this one.
+A ten-year goal is reached by a small loop you run almost every day, protected from your moods, with feedback often
+enough to steer. This file is that loop. [HABITS.md](HABITS.md) explains why it's designed the way it is;
+[OPERATIONS.md](OPERATIONS.md) says what to do when anything goes sideways.
 
-The design borrows from three well-evidenced ideas: **spaced repetition** (fight forgetting), **deliberate practice**
-(work at the edge of ability, with feedback, not comfortable repetition), and **artifacts** (externalise understanding
-so it's testable and visible). Everything below is in service of those.
-
----
-
-## The daily loop (the non-negotiable core)
-
-Every day, in this order, ~90 minutes minimum:
-
-1. **Review (10 min).** Run the spaced-repetition deck (Anki). Definitions, theorems, formulas, syntax, vocab —
-   anything memory-heavy from any track. This is what stops last month's work from evaporating.
-2. **Deep block (60–90 min).** One topic, from the current spine. Phone in another room. This is *deliberate*
-   practice: do problems, derive, build, debug — produce, don't just read. If you're comfortable, you're wasting it;
-   move to the edge.
-3. **Log (2 min).** One line in `logs/YYYY-MM.md`: what you did, and the single thing you understood or got stuck on.
-   Then `git commit`. The commit is the proof the day happened.
-
-That's it. Review, block, log, commit. Three bad days of *just* this still move you forward. The streak is the asset;
-`logs/streak.md` tracks it. **Rule: never miss two days in a row.** One miss is noise; two is the start of a stop.
+It rests on three well-evidenced ideas: **spaced repetition** (beat forgetting), **deliberate practice** (work at the
+edge of your ability, with feedback), and **artifacts** (externalise understanding so it's testable and visible).
 
 ---
 
-## The weekly loop (steering)
+## The daily loop
 
-Once a week (~45 min), in `review/weekly/YYYY-Www.md`:
+| Step | Time | What | Tool |
+|---|---|---|---|
+| Cue | — | your time, your place, after your anchor habit | `system/config.toml` |
+| Warm-up | 5–10 min | Anki reviews + one tiny "snack" rep | `today` |
+| Deep block | 60–90 min | the one session on the card — produce, don't just read | `today` opens it |
+| Close | 2 min | log, tick, streak, progress, commit, push | `today done` |
 
-- **What landed / what didn't.** Honest. Where did the deep blocks actually go?
-- **Produce one real artifact** from the week's work — a write-up, a proof set, a working program, a benchmark. This
-  is the week's deliverable; the daily blocks are the means to it.
-- **Pick next week's focus:** the one topic on the one track that gets the deep blocks. One. Not five.
-- **Deck hygiene:** add cards for what you want to retain; delete cards you've learned past or that are low value.
+**Floor, not ceiling.** The two-minute version (open the link, do one problem) counts on a bad day. **Never miss
+twice** — one miss is noise, two is a new habit. The card warns you the day after a miss.
 
----
+## The weekly schedule (Phase 1 — year one)
 
-## The monthly & quarterly loops (altitude)
+`today` picks the track by weekday, so there's nothing to decide. Lists alternate week by week.
 
-- **Monthly** (`review/monthly/YYYY-MM.md`): skim the month's logs. Did the spine actually advance, or did shiny
-  side-topics eat it? Advance a flagship project (`projects/`) at least a little. Re-read the current quarter's goal.
-- **Quarterly** (`review/quarterly/YYYY-Qn.md`): the **gate check**. Each track has gates in [CURRICULUM.md](CURRICULUM.md)
-  (e.g. "can derive Lagrange's equations and simulate a double pendulum"). Did you pass this quarter's gate and
-  produce its artifact? If yes, advance a rung. If no, why — too ambitious, too little time, wrong order? Adjust the
-  trajectory. A plan you never revise is a plan you're not really using.
+| Mon | Tue | Wed | Thu | Fri | Sat | Sun |
+|---|---|---|---|---|---|---|
+| Maths | Systems | Programming / CS | Maths | AI/ML | Systems / Finance | Finance / Physics |
 
----
+Why this shape: maths is the bottleneck for AI, quant and physics, so it gets two days; Systems (DataPulse) is the
+fastest route to a senior role; programming gets daily reps through the Tuesday/Thursday Exercism warm-up as well as
+its own slot. A different subject most days keeps boredom away. **Re-weight it every quarter** at the gate check as
+the trajectory moves on. Want something else today? `today swap TRACK`. Bonus energy? `today more`.
 
-## The methods, matched to the material
+Each warm-up snack is matched to the day: Corbettmaths 5-a-day (Mon/Wed/Fri), Exercism (Tue/Thu), a Bandit level
+(Sat), an Isaac Physics problem (Sun) — small enough that starting is effortless.
 
-Different knowledge needs different tools. Don't use one for all:
+## The weekly loop — steering (Sunday, 30–45 min)
 
-| Material | Method | In this repo |
+Run `today week`: it creates `review/weekly/YYYY-Www.md` pre-filled with days studied, hours, sessions completed and
+the takeaways you logged. You add: what landed, what didn't, the **Goldilocks check** (too easy / right / too hard),
+the week's artifact, next week's intention, and an if-then plan for the likely obstacle.
+
+## The monthly and quarterly loops — altitude
+
+- **Monthly** (`review/monthly/`): did the spine actually advance? Push a flagship project forward. One curiosity
+  block with no curriculum. Optional public progress post.
+- **Quarterly** (`review/quarterly/`): the **gate check** — which modules were completed, with their gate artifacts?
+  Is the pace matching [TRAJECTORY.md](TRAJECTORY.md)? Edit the trajectory honestly, re-weight the schedule, renew the
+  habit contract. A plan you never revise is decoration.
+- **Yearly:** a one-page "year in learning", published.
+
+## How the curriculum is consumed
+
+Each track's `curriculum.md` is a list of **modules**, each a list of **sessions** sized for one deep block, ending
+in a **gate artifact**. `today` always serves the first unticked session of the scheduled track — strictly top to
+bottom, so you're never choosing. A session that takes two blocks just stays on the card until you tick it.
+Placement sessions at the start of each rung let you tick off what you already own. See [CURRICULUM.md](CURRICULUM.md).
+
+## Methods, matched to the material
+
+| Material | Method | Where |
 |---|---|---|
-| Facts, definitions, theorems, formulas, syntax, vocab | **Spaced repetition** (Anki, daily) | cards tagged by track |
-| Skills — solving, proving, coding, debugging | **Deliberate practice** (problem sets at the edge, with feedback) | `tracks/*/*/problems/` |
-| Understanding — does it connect, can I explain it | **The Feynman test** (write the explanation for a novice) | topic `notes.md`, essays |
-| Synthesis — does it all work together | **Projects** (build something that forces many pieces) | `projects/` |
-| Retention of the *why* behind a decision | **ADRs & postmortems** (context → options → decision → consequence) | `templates/adr.md` |
+| Facts, definitions, theorems, formulas, syntax | **Spaced repetition** — Anki, daily | the warm-up; module "Anki seeds" |
+| Skills — solving, proving, coding, debugging | **Deliberate practice** at the edge, with feedback | the deep block |
+| Understanding — does it connect? can I explain it? | **The Feynman test** — explain it to a novice | module notes |
+| Synthesis — does it all work together? | **Projects** | gate artifacts, `projects/` |
+| Why a decision was made | **ADRs & postmortems** | `templates/adr.md` |
 
-**Build naive first, then measure, then improve** — and keep the before/after number. Pre-optimising or
-pre-abstracting robs you of the lesson. (Straight from the DataPulse rules; it generalises.)
+**Build naive first, then measure, then improve** — and keep the before/after numbers.
 
----
+## Tooling
 
-## Tooling for the system itself
+- **`today`** (`tools/today.py`) — the daily driver. Standard-library Python, reads only the markdown; no database.
+- **Git + GitHub** — the progress ledger and the sync between computers. Every study day is a commit.
+- **Anki + AnkiWeb** — the spaced-repetition deck, synced to your phone.
+- **Markdown + LaTeX** — notes and write-ups; `$...$` maths renders on GitHub.
 
-- **Anki** — the spaced-repetition deck. One deck, subdecks per track. 10 minutes, every day.
-- **Git** — the progress ledger. Commit every study day. `git log` is your real transcript.
-- **Markdown + LaTeX** — notes and write-ups; LaTeX (`$...$`) for all maths so it renders on GitHub.
-- **A timer** — one honest 60–90 min block beats three distracted hours. Track where the time really goes.
-- **The repo** — single source of truth. Not scattered notebooks, not OneNote, not your head.
+## Guardrails — how ten-year plans die, and the defence
 
----
-
-## Guardrails against the ways this dies
-
-- **Tutorial hell / passive consumption** → the artifact rule. No commit, didn't happen.
-- **Shiny-topic drift** → the weekly "one focus" and the quarterly gate. Breadth is scheduled, not impulsive.
-- **Over-ambition burning you out** → 90 min is the floor and the win. More is a bonus, never the expectation.
-- **Silent forgetting** → the daily deck. The most expensive mistake is relearning what you already paid for.
-- **Invisible progress killing motivation** → the streak, the green commit squares, the growing `projects/`. Make the
-  compounding *visible* so you feel it before you can measure it.
+| Failure mode | Defence |
+|---|---|
+| Tutorial hell, passive watching | the artifact rule — no artifact, not done |
+| Decision fatigue ("what should I study?") | the schedule + strictly-ordered sessions; `today` decides |
+| Shiny-topic drift | fixed schedule; breadth goes in `today more` and curiosity blocks |
+| Over-ambition → burnout | 90 min is the target, two minutes is the floor; never the reverse |
+| Silent forgetting | the daily deck |
+| Invisible progress → lost motivation | streak, compounding number, PROGRESS.md bars, green squares |
+| Boredom (the real killer) | variety by weekday, the Goldilocks check, play built into the curriculum |
 
 > The goal of this file is to make the right action the default action, on a bad day, with no willpower left.
-> If a week feels hard, shrink the block, never the streak.
+> If a week is hard, shrink the block — never the streak.

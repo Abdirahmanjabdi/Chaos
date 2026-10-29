@@ -1,9 +1,10 @@
 # Track: Systems & Infrastructure
 
-Linux · Docker · Kubernetes · AWS · cloud · networking · SRE. The most job-ready track — your fastest route to a
-senior fintech/SRE role.
+Linux → networking → Docker → Kubernetes → AWS → SRE → low latency. Most of it *is* the DataPulse flagship (`../../projects/datapulse`, `../../ROADMAP.md`).
 
-- **Ladder & gates:** see [CURRICULUM §5](../../CURRICULUM.md#5-systems--infrastructure--the-job-ready-track-and-where-datapulse-lives)
-- **Current rung:** _to calibrate_ (some Linux; DataPulse Phase 0 next)
-- **Convention:** this track is largely the **DataPulse** flagship (`../../projects/datapulse/`, see
-  `../../ROADMAP.md`). Artifacts = ADRs, benchmarks, field-notes, postmortems. Linux-heavy work is developed in WSL2.
+- **The curriculum:** [curriculum.md](curriculum.md) — every module, its sessions, resources and gate artifact.
+- **Where you are:** see [PROGRESS.md](../../PROGRESS.md) (updated by `today done`), or run `today status`.
+- **Your notes:** one folder per module here, e.g. `systems/<module-id>/`, started from
+  [templates/topic.md](../../templates/topic.md) at the module kickoff. Gate artifacts are committed into it.
+- **Changing it:** edit `curriculum.md` freely, then run `today doctor` (rules in
+  [OPERATIONS.md](../../OPERATIONS.md#editing-the-curriculum)).

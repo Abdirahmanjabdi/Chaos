@@ -1,8 +1,10 @@
 # Track: AI & Machine Learning
 
-Classical ML → deep learning from scratch → modern (LLMs, RL, diffusion). Built, not imported. A spine track.
+Classical ML → neural nets and GPT from scratch → LLMs, RL, diffusion, MLOps → markets → research.
 
-- **Ladder & gates:** see [CURRICULUM §6](../../CURRICULUM.md#6-ai--machine-learning--built-from-scratch-not-imported)
-- **Current rung:** _to calibrate_ (needs the maths track in parallel: linear algebra, probability, optimization)
-- **Convention:** implement from scratch before reaching for a library — regression in NumPy, then
-  micrograd → makemore → a small GPT (Karpathy). Local-model experiments in `../../ai-local/`.
+- **The curriculum:** [curriculum.md](curriculum.md) — every module, its sessions, resources and gate artifact.
+- **Where you are:** see [PROGRESS.md](../../PROGRESS.md) (updated by `today done`), or run `today status`.
+- **Your notes:** one folder per module here, e.g. `ai-ml/<module-id>/`, started from
+  [templates/topic.md](../../templates/topic.md) at the module kickoff. Gate artifacts are committed into it.
+- **Changing it:** edit `curriculum.md` freely, then run `today doctor` (rules in
+  [OPERATIONS.md](../../OPERATIONS.md#editing-the-curriculum)).
