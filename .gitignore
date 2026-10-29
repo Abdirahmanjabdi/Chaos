@@ -1,0 +1,35 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+*.egg-info/
+dist/
+build/
+
+# env / secrets — never commit these
+.env
+*.key
+*.pem
+secrets/
+
+# data & models — too big / not source
+data/
+*.db
+*.sqlite
+models/
+*.gguf
+*.onnx
+
+# OS / editor noise
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+
+# Anki exports are generated, not source
+*.apkg
