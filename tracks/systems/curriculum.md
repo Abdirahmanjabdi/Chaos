@@ -13,7 +13,7 @@ because `strace`/`perf`/eBPF need Linux. **Levels:** F · S · U · G · R (see 
 **Resources:**
 - [The Linux Command Line (William Shotts)](https://linuxcommand.org/tlcl.php) — free book
 - [OverTheWire Bandit](https://overthewire.org/wargames/bandit/) — a game that teaches the shell
-- [Linux Journey](https://linuxjourney.com) — short free lessons
+- [Linux Journey](https://labex.io/linuxjourney) — short free lessons
 **Sessions:**
 - [ ] S01.S01 — Placement & setup: confirm WSL2 Ubuntu works; play [Bandit](https://overthewire.org/wargames/bandit/) levels 0–5; note what was new.
 - [ ] S01.S02 — The shell: navigation, files and directories, permissions (TLCL part 1).
@@ -31,7 +31,7 @@ because `strace`/`perf`/eBPF need Linux. **Levels:** F · S · U · G · R (see 
 <!-- rung: U | prereq: S01 | feeds: S10 debugging, SRE -->
 **Goal:** Know what the system is doing underneath — boot, services, users, filesystems, `/proc` — and set a machine up from scratch.
 **Resources:**
-- [Linux Journey](https://linuxjourney.com)
+- [Linux Journey](https://labex.io/linuxjourney)
 - [Julia Evans' zines](https://wizardzines.com) — the clearest explanations of Linux internals
 - `man` pages (`man 7 signal`, `man 5 proc`)
 **Sessions:**
@@ -128,7 +128,7 @@ because `strace`/`perf`/eBPF need Linux. **Levels:** F · S · U · G · R (see 
 <!-- rung: U | prereq: S07 | feeds: capacity planning, S15 -->
 **Goal:** Find the system's limits honestly and explain them — without falling for coordinated omission.
 **Resources:**
-- [k6 docs](https://grafana.com/docs/k6/)
+- [k6 docs](https://grafana.com/docs/k6/latest/)
 - [Brendan Gregg's site](https://www.brendangregg.com) — flame graphs and methodology
 - "How NOT to Measure Latency" — Gil Tene (search YouTube)
 **Sessions:**
@@ -211,7 +211,7 @@ because `strace`/`perf`/eBPF need Linux. **Levels:** F · S · U · G · R (see 
 <!-- rung: G | prereq: S12 | feeds: every production system -->
 **Goal:** Make security a property of the pipeline — scanning, signing, least privilege, secrets — and model the threats.
 **Resources:**
-- [OWASP Top 10](https://owasp.org/Top10/)
+- [OWASP Top 10](https://top10.owasp.org/)
 - [Kubernetes security docs](https://kubernetes.io/docs/concepts/security/)
 - `ROADMAP.md` — Phase 8
 **Sessions:**

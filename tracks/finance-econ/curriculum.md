@@ -13,7 +13,7 @@ maths (probability M16, stochastic calculus M26, optimisation M22). **Levels:** 
 **Resources:**
 - [OpenStax — Principles of Economics](https://openstax.org/subjects/social-sciences) — free textbook
 - [Marginal Revolution University](https://mru.org) — short free videos
-- [MIT 14.01 Principles of Microeconomics](https://ocw.mit.edu/courses/14-01-principles-of-microeconomics-fall-2018/)
+- [MIT 14.01 Principles of Microeconomics](https://ocw.mit.edu/courses/14-01-principles-of-microeconomics-fall-2023/)
 **Sessions:**
 - [ ] E01.S01 — Placement and the economic way of thinking: scarcity, opportunity cost, incentives ([MRU](https://mru.org) intro videos).
 - [ ] E01.S02 — Supply and demand; equilibrium; shifts vs movements along a curve.
@@ -32,7 +32,7 @@ maths (probability M16, stochastic calculus M26, optimisation M22). **Levels:** 
 **Resources:**
 - [OpenStax — Principles of Economics](https://openstax.org/subjects/social-sciences) — the macro chapters
 - [Marginal Revolution University](https://mru.org) — Principles of Macroeconomics
-- [Bank of England — Knowledge Bank](https://www.bankofengland.co.uk/knowledgebank)
+- [Bank of England — Knowledge Bank](https://www.bankofengland.co.uk/explainers)
 **Sessions:**
 - [ ] E02.S01 — GDP and growth, and how they're measured.
 - [ ] E02.S02 — Inflation and unemployment; the Phillips curve.
@@ -93,7 +93,7 @@ maths (probability M16, stochastic calculus M26, optimisation M22). **Levels:** 
 <!-- rung: U | prereq: E04, math M16 | feeds: E08, E09 -->
 **Goal:** Forwards, futures, swaps and options — pricing by no-arbitrage, the Greeks, and hedging.
 **Resources:**
-- [CME Group education](https://www.cmegroup.com/education.html) — free
+- [CME Group education](https://www.cmegroup.com/education) — free
 - [MIT 18.S096](https://ocw.mit.edu/courses/18-s096-topics-in-mathematics-with-applications-in-finance-fall-2013/)
 - Hull — *Options, Futures and Other Derivatives* (paid — the standard)
 **Sessions:**
@@ -145,7 +145,7 @@ maths (probability M16, stochastic calculus M26, optimisation M22). **Levels:** 
 <!-- rung: G | prereq: E06, E07 | feeds: your own risk rules -->
 **Goal:** Measure and manage risk — VaR, Expected Shortfall, stress tests, position sizing — on your own book.
 **Resources:**
-- [Bank for International Settlements — Basel framework](https://www.bis.org/basel_framework/)
+- [Bank for International Settlements — Basel framework](https://www.bis.org/committees/bcbs/basel-framework)
 - Hull — *Risk Management and Financial Institutions* (paid)
 **Sessions:**
 - [ ] E09.S01 — Types of risk: market, credit, liquidity, operational.

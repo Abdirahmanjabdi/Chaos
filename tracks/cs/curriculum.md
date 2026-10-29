@@ -218,7 +218,7 @@ there. **Levels:** F · S · U · G · R (see `CURRICULUM.md`).
 <!-- rung: G | prereq: C06, programming G05 | feeds: systems S15, programming G10 -->
 **Goal:** Correct and fast concurrent code — atomics, memory ordering, lock-free structures — measured, not guessed.
 **Resources:**
-- [Mara Bos — Rust Atomics and Locks](https://marabos.nl/atomics/) — free online
+- [Mara Bos — Rust Atomics and Locks](https://mara.nl/atomics/) — free online
 - [Paul McKenney — Is Parallel Programming Hard, And If So, What Can You Do About It?](https://mirrors.edge.kernel.org/pub/linux/kernel/people/paulmck/perfbook/perfbook.html) — free
 - [MIT 6.172 Performance Engineering](https://ocw.mit.edu/courses/6-172-performance-engineering-of-software-systems-fall-2018/)
 **Sessions:**

@@ -19,7 +19,7 @@ do it anyway — a fast review is cheap, a gap is expensive.
 - [Physics & Maths Tutor](https://www.physicsandmathstutor.com) — past papers and topic questions
 - [Khan Academy Maths](https://www.khanacademy.org/math) — course challenges, useful for placement
 **Sessions:**
-- [ ] M01.S01 — Placement I: a GCSE Higher paper 1 (non-calculator) from [PMT](https://www.physicsandmathstutor.com/maths-revision/gcse-maths/papers/), timed. Mark it honestly; list every topic you dropped marks on in your notes.
+- [ ] M01.S01 — Placement I: a GCSE Higher paper 1 (non-calculator) from [PMT](https://www.physicsandmathstutor.com/past-papers/gcse-maths/), timed. Mark it honestly; list every topic you dropped marks on in your notes.
 - [ ] M01.S02 — Placement II: a GCSE Higher calculator paper, timed and marked. Tick the sessions in M01–M06 you clearly already own (append "placed out").
 - [ ] M01.S03 — Fractions, decimals, percentages: four operations with fractions, recurring decimals → fractions, percentage change and reverse percentages.
 - [ ] M01.S04 — Powers and roots: index laws incl. negative and fractional indices, standard form, surds (simplify and rationalise).
@@ -108,7 +108,7 @@ do it anyway — a fast review is cheap, a gap is expensive.
 <!-- rung: F | prereq: M01–M05 | feeds: the A-level rung -->
 **Goal:** Prove the foundation is solid — grade-9 standard under exam conditions.
 **Resources:**
-- [Physics & Maths Tutor — GCSE past papers](https://www.physicsandmathstutor.com/maths-revision/gcse-maths/papers/)
+- [Physics & Maths Tutor — GCSE past papers](https://www.physicsandmathstutor.com/past-papers/gcse-maths/)
 - [Dr Frost Maths](https://www.drfrost.org)
 **Sessions:**
 - [ ] M06.S01 — Past paper (non-calculator), timed; mark it; start an "error log" of mistake types.
@@ -124,7 +124,7 @@ do it anyway — a fast review is cheap, a gap is expensive.
 **Goal:** Make the jump from doing to showing *why* — proof, and algebra at A-level depth.
 **Resources:**
 - [Dr Frost Maths — A-level](https://www.drfrost.org)
-- [Physics & Maths Tutor — A-level Maths](https://www.physicsandmathstutor.com/maths-revision/a-level-maths/)
+- [Physics & Maths Tutor — A-level Maths](https://www.physicsandmathstutor.com/a-level-maths-papers/)
 - [OpenStax Algebra and Trigonometry](https://openstax.org/subjects/math) — free textbook
 - [Khan Academy Precalculus](https://www.khanacademy.org/math/precalculus)
 **Sessions:**
@@ -159,12 +159,12 @@ do it anyway — a fast review is cheap, a gap is expensive.
 <!-- rung: S | prereq: M08 | feeds: physics, ML, quant, everything after -->
 **Goal:** Understand change and accumulation — derivatives and integrals from first principles to real applications.
 **Resources:**
-- [3Blue1Brown — Essence of Calculus](https://www.3blue1brown.com/topics/calculus) — watch first, for intuition
+- [3Blue1Brown — Essence of Calculus](https://www.3blue1brown.com/?topic=calculus) — watch first, for intuition
 - [MIT 18.01SC Single Variable Calculus](https://ocw.mit.edu/courses/18-01sc-single-variable-calculus-fall-2010/)
 - [OpenStax Calculus Volume 1](https://openstax.org/subjects/math) — free textbook
 - [Dr Frost Maths — A-level](https://www.drfrost.org)
 **Sessions:**
-- [ ] M09.S01 — Intuition first: [3Blue1Brown Essence of Calculus](https://www.3blue1brown.com/topics/calculus) chapters 1–4 (derivatives as rates; the rules seen visually).
+- [ ] M09.S01 — Intuition first: [3Blue1Brown Essence of Calculus](https://www.3blue1brown.com/?topic=calculus) chapters 1–4 (derivatives as rates; the rules seen visually).
 - [ ] M09.S02 — Limits and first principles: derive d/dx of xⁿ, sin x and eˣ from the definition.
 - [ ] M09.S03 — The rules: product, quotient, chain; derivatives of eˣ, ln x, trig functions and their inverses.
 - [ ] M09.S04 — Applications: tangents and normals, stationary points and the second derivative, optimisation problems.
@@ -197,7 +197,7 @@ do it anyway — a fast review is cheap, a gap is expensive.
 **Goal:** Mathematics that moves — the bridge into physics.
 **Resources:**
 - [Dr Frost Maths — mechanics](https://www.drfrost.org)
-- [Isaac Physics](https://isaacphysics.org) — excellent free problem platform
+- [Isaac Physics](https://isaacscience.org/) — excellent free problem platform
 **Sessions:**
 - [ ] M11.S01 — Kinematics: derive SUVAT; displacement–time and velocity–time graphs; calculus in kinematics.
 - [ ] M11.S02 — Forces and Newton's laws: resolving forces, connected particles, pulleys.
@@ -212,7 +212,7 @@ do it anyway — a fast review is cheap, a gap is expensive.
 **Goal:** The extra tools every undergraduate course assumes — complex numbers, matrices, induction, series.
 **Resources:**
 - [Dr Frost Maths — Further Maths](https://www.drfrost.org)
-- [Physics & Maths Tutor — Further Maths](https://www.physicsandmathstutor.com/maths-revision/a-level-further-maths/)
+- [Physics & Maths Tutor — Further Maths](https://www.physicsandmathstutor.com/maths-revision/further-core-pure/)
 - [3Blue1Brown](https://www.3blue1brown.com) — Euler's formula and complex numbers videos
 - [OpenStax Calculus Volume 2](https://openstax.org/subjects/math)
 **Sessions:**
@@ -249,10 +249,10 @@ do it anyway — a fast review is cheap, a gap is expensive.
 <!-- rung: U | prereq: M12 | feeds: ML (heavily), physics, CS -->
 **Goal:** Fluency with vectors, matrices, subspaces, eigenvalues and the SVD — the single most useful maths for ML.
 **Resources:**
-- [3Blue1Brown — Essence of Linear Algebra](https://www.3blue1brown.com/topics/linear-algebra)
+- [3Blue1Brown — Essence of Linear Algebra](https://www.3blue1brown.com/?topic=linear-algebra)
 - [MIT 18.06SC Linear Algebra (Gilbert Strang)](https://ocw.mit.edu/courses/18-06sc-linear-algebra-fall-2011/) — lectures + problem sets
 **Sessions:**
-- [ ] M14.S01 — Intuition first: [Essence of Linear Algebra](https://www.3blue1brown.com/topics/linear-algebra) chapters 1–7 (vectors, span, linear maps, matrix multiplication, determinants, inverses).
+- [ ] M14.S01 — Intuition first: [Essence of Linear Algebra](https://www.3blue1brown.com/?topic=linear-algebra) chapters 1–7 (vectors, span, linear maps, matrix multiplication, determinants, inverses).
 - [ ] M14.S02 — 18.06: the geometry of Ax = b, elimination, multiplication and inverses, A = LU.
 - [ ] M14.S03 — Vector spaces and subspaces; column space and nullspace; solving Ax = 0 and Ax = b.
 - [ ] M14.S04 — Independence, basis and dimension; the four fundamental subspaces.
@@ -288,7 +288,7 @@ do it anyway — a fast review is cheap, a gap is expensive.
 <!-- rung: U | prereq: M13, M15 | feeds: statistics, ML, quant, physics -->
 **Goal:** Real probability — random variables, distributions, expectation, limit theorems, Markov chains.
 **Resources:**
-- [Harvard Stat 110 (Joe Blitzstein)](https://projects.iq.harvard.edu/stat110) — lectures, problem sets, and the free book *Introduction to Probability* (Blitzstein & Hwang)
+- [Harvard Stat 110 (Joe Blitzstein)](https://stat110.hsites.harvard.edu/) — lectures, problem sets, and the free book *Introduction to Probability* (Blitzstein & Hwang)
 **Sessions:**
 - [ ] M16.S01 — Probability and counting; story proofs; the naive definition and its limits.
 - [ ] M16.S02 — Conditional probability, Bayes' rule, independence; the Monty Hall problem done right.
@@ -407,7 +407,7 @@ do it anyway — a fast review is cheap, a gap is expensive.
 <!-- rung: U | prereq: M13 | feeds: cryptography, physics (symmetry) -->
 **Goal:** Structure for its own sake — groups, rings and fields — with payoffs in cryptography and the symmetries of physics.
 **Resources:**
-- [Judson — Abstract Algebra: Theory and Applications](http://abstract.ups.edu) — free textbook
+- [Judson — Abstract Algebra: Theory and Applications](https://judsonbooks.org/abstract-algebra-theory-and-applications/) — free textbook
 **Sessions:**
 - [ ] M23.S01 — Groups: definitions, examples, subgroups.
 - [ ] M23.S02 — Cyclic groups and permutation groups.

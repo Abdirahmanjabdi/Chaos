@@ -25,11 +25,11 @@ track — linear algebra (M14), multivariable calculus (M15), probability (M16),
 <!-- rung: F | prereq: A01, math M09 | feeds: A03 onwards -->
 **Goal:** See what a neural network is and how gradient descent learns — before any heavy maths — then connect it to the maths track.
 **Resources:**
-- [3Blue1Brown — Neural Networks](https://www.3blue1brown.com/topics/neural-networks)
+- [3Blue1Brown — Neural Networks](https://www.3blue1brown.com/?topic=neural-networks)
 - [StatQuest](https://statquest.org) — friendly explanations of every ML idea
 - [Mathematics for Machine Learning](https://mml-book.github.io) — free book
 **Sessions:**
-- [ ] A02.S01 — [3Blue1Brown Neural Networks](https://www.3blue1brown.com/topics/neural-networks) chapters 1–2: what a network is; gradient descent.
+- [ ] A02.S01 — [3Blue1Brown Neural Networks](https://www.3blue1brown.com/?topic=neural-networks) chapters 1–2: what a network is; gradient descent.
 - [ ] A02.S02 — 3Blue1Brown chapters 3–4: backpropagation and its calculus.
 - [ ] A02.S03 — MML: linear algebra for ML (pair with math M14).
 - [ ] A02.S04 — MML: vector calculus and the gradient (pair with math M15).
@@ -127,7 +127,7 @@ track — linear algebra (M14), multivariable calculus (M15), probability (M16),
 <!-- rung: G | prereq: A05, A06 | feeds: real-world AI products -->
 **Goal:** How modern language models are trained, made efficient, adapted and evaluated — hands-on on your own GPU.
 **Resources:**
-- [Stanford CS336 — Language Modeling from Scratch](https://stanford-cs336.github.io)
+- [Stanford CS336 — Language Modeling from Scratch](https://cs336.stanford.edu/)
 - [Hugging Face Learn](https://huggingface.co/learn)
 - your `ai-local/` setup (RTX 4060)
 **Sessions:**
@@ -208,7 +208,7 @@ track — linear algebra (M14), multivariable calculus (M15), probability (M16),
 **Goal:** Read ML research critically, reproduce it, and add something.
 **Resources:**
 - [arXiv](https://arxiv.org) — cs.LG, stat.ML
-- [Papers with Code](https://paperswithcode.com)
+- [Hugging Face Papers (successor to Papers with Code)](https://huggingface.co/papers/trending)
 **Sessions:**
 - [ ] A13.S01 — Choose a niche (efficient inference, RL, or time series) and start a weekly paper habit.
 - [ ] A13.S02 — Read five papers; summarise each in a paragraph.

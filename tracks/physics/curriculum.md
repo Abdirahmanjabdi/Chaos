@@ -12,7 +12,7 @@ hard on the maths track — do the paired maths first. **Levels:** F · S · U �
 <!-- rung: F | prereq: none | feeds: everything in this track -->
 **Goal:** Find your level, then make the basics of motion, force and energy solid and intuitive.
 **Resources:**
-- [Isaac Physics](https://isaacphysics.org) — free problems, GCSE to university (from Cambridge)
+- [Isaac Physics](https://isaacscience.org/) — free problems, GCSE to university (from Cambridge)
 - [Physics & Maths Tutor — GCSE Physics](https://www.physicsandmathstutor.com/physics-revision/gcse-aqa/)
 - [BBC Bitesize](https://www.bbc.co.uk/bitesize) — GCSE Physics
 - [Khan Academy Physics](https://www.khanacademy.org/science/physics)
@@ -30,7 +30,7 @@ hard on the maths track — do the paired maths first. **Levels:** F · S · U �
 <!-- rung: F | prereq: P01 | feeds: P03, P04 -->
 **Goal:** Complete the GCSE picture — circuits, waves, the particle model, radioactivity, magnetism, space.
 **Resources:**
-- [Isaac Physics](https://isaacphysics.org)
+- [Isaac Physics](https://isaacscience.org/)
 - [Physics & Maths Tutor](https://www.physicsandmathstutor.com/physics-revision/gcse-aqa/)
 **Sessions:**
 - [ ] P02.S01 — Circuits: current, potential difference, resistance, series and parallel, I–V graphs.
@@ -47,7 +47,7 @@ hard on the maths track — do the paired maths first. **Levels:** F · S · U �
 <!-- rung: S | prereq: P02, math M09 | feeds: P05 -->
 **Goal:** A-level depth in mechanics, oscillations, materials and waves — with simulations to make it tangible.
 **Resources:**
-- [Isaac Physics](https://isaacphysics.org) — A-level problems
+- [Isaac Physics](https://isaacscience.org/) — A-level problems
 - [Physics & Maths Tutor — A-level Physics](https://www.physicsandmathstutor.com/physics-revision/a-level-aqa/)
 - [OpenStax University Physics Volume 1](https://openstax.org/subjects/science) — free
 **Sessions:**
@@ -66,7 +66,7 @@ hard on the maths track — do the paired maths first. **Levels:** F · S · U �
 <!-- rung: S | prereq: P03 | feeds: P05, P06 -->
 **Goal:** Fields, thermal physics and the first quantum ideas — the doorway to university physics.
 **Resources:**
-- [Isaac Physics](https://isaacphysics.org)
+- [Isaac Physics](https://isaacscience.org/)
 - [Physics & Maths Tutor — A-level Physics](https://www.physicsandmathstutor.com/physics-revision/a-level-aqa/)
 **Sessions:**
 - [ ] P04.S01 — Gravitational fields: Newton's law of gravitation, field strength, potential, orbits.
@@ -119,7 +119,7 @@ hard on the maths track — do the paired maths first. **Levels:** F · S · U �
 <!-- rung: U | prereq: P05, math M19, M24 | feeds: everything after -->
 **Goal:** The mathematical toolkit of theoretical physics — Fourier methods, PDEs, special functions, normal modes, variational calculus.
 **Resources:**
-- [David Tong's lecture notes](https://www.damtp.cam.ac.uk/user/tong/teaching.html) — free, superb
+- [David Tong's lecture notes](https://davidtong.org/teaching/) — free, superb
 - the maths track (M15, M19, M24)
 - Boas — *Mathematical Methods in the Physical Sciences* (paid)
 **Sessions:**
@@ -136,7 +136,7 @@ hard on the maths track — do the paired maths first. **Levels:** F · S · U �
 <!-- rung: U | prereq: P07 | feeds: P11, P15, the whole of theoretical physics -->
 **Goal:** Mechanics reformulated through least action — symmetries, conservation laws, phase space, chaos.
 **Resources:**
-- [David Tong — Classical Dynamics](https://www.damtp.cam.ac.uk/user/tong/teaching.html) — free notes
+- [David Tong — Classical Dynamics](https://davidtong.org/teaching/) — free notes
 - [Leonard Susskind — The Theoretical Minimum](https://theoreticalminimum.com) — free lectures
 - Taylor — *Classical Mechanics* (paid)
 **Sessions:**
@@ -155,7 +155,7 @@ hard on the maths track — do the paired maths first. **Levels:** F · S · U �
 <!-- rung: U | prereq: P06, P07 | feeds: P10, P15 -->
 **Goal:** Electrodynamics in differential form — boundary-value problems, fields in matter, and light as an electromagnetic wave.
 **Resources:**
-- [David Tong — Electromagnetism](https://www.damtp.cam.ac.uk/user/tong/teaching.html) — free notes
+- [David Tong — Electromagnetism](https://davidtong.org/teaching/) — free notes
 - Griffiths — *Introduction to Electrodynamics* (paid)
 **Sessions:**
 - [ ] P09.S01 — Electrostatics: field and potential; Gauss's law in differential form.
@@ -172,7 +172,7 @@ hard on the maths track — do the paired maths first. **Levels:** F · S · U �
 <!-- rung: U | prereq: P05, P09 | feeds: P14, P15 -->
 **Goal:** Space and time as one spacetime — Lorentz transformations, four-vectors, E = mc².
 **Resources:**
-- [David Tong — Dynamics and Relativity](https://www.damtp.cam.ac.uk/user/tong/teaching.html)
+- [David Tong — Dynamics and Relativity](https://davidtong.org/teaching/)
 - [The Theoretical Minimum — Special Relativity](https://theoreticalminimum.com)
 **Sessions:**
 - [ ] P10.S01 — The postulates; relativity of simultaneity; time dilation and length contraction.
@@ -187,7 +187,7 @@ hard on the maths track — do the paired maths first. **Levels:** F · S · U �
 **Goal:** The wavefunction, the Schrödinger equation, and the formalism — solved analytically and numerically.
 **Resources:**
 - [MIT 8.04 Quantum Physics I (Allan Adams)](https://ocw.mit.edu/courses/8-04-quantum-physics-i-spring-2013/)
-- [David Tong — Quantum Mechanics](https://www.damtp.cam.ac.uk/user/tong/teaching.html) — free notes
+- [David Tong — Quantum Mechanics](https://davidtong.org/teaching/) — free notes
 - Griffiths — *Introduction to Quantum Mechanics* (paid)
 **Sessions:**
 - [ ] P11.S01 — Why quantum: the photoelectric effect, the double slit, Stern–Gerlach; the wavefunction.
@@ -204,7 +204,7 @@ hard on the maths track — do the paired maths first. **Levels:** F · S · U �
 <!-- rung: U | prereq: P11, math M16 | feeds: P16, ML (energy-based models), finance (physics of markets) -->
 **Goal:** From counting microstates to phase transitions — and a simulation that shows one happening.
 **Resources:**
-- [David Tong — Statistical Physics](https://www.damtp.cam.ac.uk/user/tong/teaching.html) — free notes
+- [David Tong — Statistical Physics](https://davidtong.org/teaching/) — free notes
 - Blundell & Blundell — *Concepts in Thermal Physics* (paid)
 **Sessions:**
 - [ ] P12.S01 — The laws of thermodynamics; entropy; heat engines.
@@ -220,7 +220,7 @@ hard on the maths track — do the paired maths first. **Levels:** F · S · U �
 <!-- rung: U | prereq: P11 | feeds: P15 -->
 **Goal:** Quantum mechanics in three dimensions — angular momentum, hydrogen, spin, identical particles, approximation methods.
 **Resources:**
-- [David Tong — Applications of Quantum Mechanics](https://www.damtp.cam.ac.uk/user/tong/teaching.html)
+- [David Tong — Applications of Quantum Mechanics](https://davidtong.org/teaching/)
 - [MIT 8.05 Quantum Physics II](https://ocw.mit.edu/search/?q=8.05)
 **Sessions:**
 - [ ] P13.S01 — Quantum mechanics in 3D; angular momentum; spherical harmonics.
@@ -238,7 +238,7 @@ hard on the maths track — do the paired maths first. **Levels:** F · S · U �
 **Resources:**
 - [Sean Carroll — Lecture Notes on General Relativity](https://arxiv.org/abs/gr-qc/9712019) — free
 - [The Theoretical Minimum — General Relativity](https://theoreticalminimum.com)
-- [David Tong — General Relativity](https://www.damtp.cam.ac.uk/user/tong/teaching.html)
+- [David Tong — General Relativity](https://davidtong.org/teaching/)
 **Sessions:**
 - [ ] P14.S01 — The equivalence principle; curved spacetime, intuitively.
 - [ ] P14.S02 — Manifolds, tensors, the metric.
@@ -252,7 +252,7 @@ hard on the maths track — do the paired maths first. **Levels:** F · S · U �
 <!-- rung: G | prereq: P13, P10, P08 | feeds: P17 -->
 **Goal:** Why fields, and how to quantise them — the framework of modern particle physics.
 **Resources:**
-- [David Tong — Quantum Field Theory](https://www.damtp.cam.ac.uk/user/tong/teaching.html) — free notes
+- [David Tong — Quantum Field Theory](https://davidtong.org/teaching/) — free notes
 - Lancaster & Blundell — *Quantum Field Theory for the Gifted Amateur* (paid)
 **Sessions:**
 - [ ] P15.S01 — Why fields; classical field theory; Lagrangian densities.
@@ -267,7 +267,7 @@ hard on the maths track — do the paired maths first. **Levels:** F · S · U �
 <!-- rung: G | prereq: P12, P13 | feeds: P17 -->
 **Goal:** Go deep in one area, with a computational project you could show a physicist.
 **Resources:**
-- [David Tong's notes](https://www.damtp.cam.ac.uk/user/tong/teaching.html) — Solid State, Kinetic Theory, and more
+- [David Tong's notes](https://davidtong.org/teaching/) — Solid State, Kinetic Theory, and more
 - Newman — *Computational Physics* (several chapters free online)
 **Sessions:**
 - [ ] P16.S01 — Choose: condensed matter, computational, astrophysics or quantum information — and write down why.
