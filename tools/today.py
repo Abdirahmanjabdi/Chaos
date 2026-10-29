@@ -184,6 +184,13 @@ def load_config() -> dict:
         return tomllib.load(fh)
 
 
+def study_day(cfg: dict, now: dt.datetime | None = None) -> dt.date:
+    """The day a block belongs to: closing at 00:30 after a late-night block still counts for the night before."""
+    hours, _, minutes = str(cfg.get("habit", {}).get("day_starts", "00:00")).partition(":")
+    now = now or dt.datetime.now()
+    return (now - dt.timedelta(hours=int(hours), minutes=int(minutes or 0))).date()
+
+
 def parse_track(path: Path) -> Track:
     lines = read(path).splitlines()
     title = next((line[2:].strip() for line in lines if line.startswith("# ")), path.parent.name)
@@ -846,7 +853,7 @@ def add_common(parser: argparse.ArgumentParser, top_level: bool) -> None:
     """Flags allowed both before and after the subcommand (argparse needs SUPPRESS on the copies)."""
     hidden = {} if top_level else {"default": argparse.SUPPRESS}
     parser.add_argument("--date", type=dt.date.fromisoformat, help=argparse.SUPPRESS,
-                        **({"default": dt.date.today()} if top_level else hidden))
+                        **({"default": None} if top_level else hidden))
     parser.add_argument("--no-open", action="store_true", help="don't open links or files", **hidden)
     parser.add_argument("--no-sync", action="store_true", help="don't pull from GitHub first", **hidden)
 
@@ -882,6 +889,7 @@ def main(argv: list[str] | None = None) -> int:
         add_common(sub.add_parser(name, help=text), top_level=False)
     args = parser.parse_args(argv)
     cfg = load_config()
+    args.date = args.date or study_day(cfg)
     handlers = {None: cmd_show, "show": cmd_show, "done": cmd_done, "swap": cmd_swap, "more": cmd_more,
                 "week": cmd_week, "status": cmd_status, "doctor": cmd_doctor}
     return handlers[args.cmd](args, cfg)

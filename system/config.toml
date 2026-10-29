@@ -3,10 +3,11 @@
 # a cue you already do every single day, a time you can actually keep, a place where the work is waiting.
 
 [habit]
-identity      = "I am a scientist-engineer who learns something hard every day."
-time          = "07:00"
-place         = "at my desk"
-after         = "I make my morning coffee"   # habit stack: "After <this>, I run `today`."
+identity      = "I am a researcher. I show up every day and do the hard thing first."
+time          = "22:00"                      # the backstop; the prayer is the real cue (Isha moves with the seasons)
+place         = "at my bedroom desk"         # upright at the desk, never in bed
+after         = "I pray Isha"                # habit stack: "After <this>, I run `today`."
+day_starts    = "04:00"                      # a block closed before 04:00 counts for the night before
 block_minutes = 75                           # the deep-block target (60-90 is the sweet spot)
 minimum       = "open the first link and do ONE problem - that counts as showing up"   # the two-minute version
 

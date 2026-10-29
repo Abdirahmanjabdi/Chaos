@@ -12,7 +12,7 @@ habit wobbles.
 
 ## The four ideas underneath everything
 
-**1. Systems beat goals.** "Reach PhD-level maths" is a goal; it tells you nothing about what to do at 07:00 today.
+**1. Systems beat goals.** "Reach PhD-level maths" is a goal; it tells you nothing about what to do after Isha tonight.
 Winners and losers often have the *same* goals — what differs is the system. Your system is the daily loop in
 [SYSTEM.md](SYSTEM.md). Fall in love with running it, and the goals take care of themselves.
 
@@ -25,7 +25,7 @@ being stored, not wasted: understanding is quietly accumulating below the surfac
 once. Most people quit in this valley. Knowing it's coming is half of getting through it.
 
 **4. Change who you are, not just what you do.** The deepest lever is identity. "I'm trying to study more" is
-fragile; "I'm a scientist-engineer who learns something hard every day" is durable, because people act in line with
+fragile; "I am a researcher. I show up every day and do the hard thing first" is durable, because people act in line with
 who they believe they are. **Every session you complete is a vote for that identity.** You don't need a unanimous
 vote — just a majority, day after day. Your identity line sits at the top of every `today` card.
 
@@ -39,14 +39,21 @@ Every habit runs on a loop: **cue → craving → response → reward**. Make ea
 
 You can't skip a habit you can't miss. Remove every decision about *whether* and *what*.
 
-- **Implementation intention.** Not "I'll study more" but: *"I will run `today` at 07:00 at my desk."* Vague
-  intentions fail; a specific time and place make it nearly automatic. → `system/config.toml` → `[habit] time / place`.
-- **Habit stack.** Attach the new habit to one you already do without fail: *"After I make my morning coffee, I run
-  `today`."* The old habit becomes the trigger for the new one. → `[habit] after`.
+- **Implementation intention.** Not "I'll study more" but: *"I will run `today` at 22:00 at my bedroom desk."*
+  Vague intentions fail; a specific time and place make it nearly automatic. → `system/config.toml` →
+  `[habit] time / place`.
+- **Habit stack.** Attach the new habit to one you already do without fail: *"After I pray Isha, I run `today`."*
+  The old habit becomes the trigger for the new one — and prayer is the strongest anchor there is, because it
+  already happens at a fixed point every single day. Isha moves with the seasons; the habit moves with it. →
+  `[habit] after`.
+- **Late night, done right.** The block is after Isha, so guard it: sit upright at the desk, never study in bed, and
+  do the hard part first while you're still sharp. Closing after midnight is fine — anything before 04:00 counts
+  for the night before (`[habit] day_starts`), so the streak never breaks on a technicality.
 - **No decisions.** The card tells you the *exact* session, opens its link, and shows the goal. You never decide what
   to study — the curriculum and the schedule already did. Decision fatigue is where habits go to die.
-- **Design the environment.** A desktop shortcut called *Start the day*. Notebook and pen left on the desk the night
-  before. Tomorrow's session is visible in `PROGRESS.md` ("Up next"), so you can prime yourself the evening before.
+- **Design the environment.** A desktop shortcut called *Start the day*. Notebook and pen left on the desk before you
+  pray. Tonight's session is visible in `PROGRESS.md` ("Up next"), so you can glance at it during the day and arrive
+  primed.
 - **A real-world cue too.** Set a daily phone alarm at your time, labelled `today`.
 
 ### Law 2 — Make it attractive (the craving)
@@ -132,12 +139,12 @@ exciting; that's most of what separates them from amateurs. But you can also *de
 Fill these in (here *and* in `system/config.toml`). Make them true for your actual life — a plan you can't keep isn't
 a plan.
 
-- **Identity:** I am __________________________________________________.
-- **Implementation intention:** I will run `today` at ________ at/in ______________________.
-- **Habit stack:** After I ______________________, I run `today`.
-- **Two-minute version:** ______________________________________________.
+- **Identity:** I am a researcher. I show up every day and do the hard thing first.
+- **Implementation intention:** I will run `today` at 22:00 at my bedroom desk.
+- **Habit stack:** After I pray Isha, I run `today`.
+- **Two-minute version:** open the first link and do ONE problem — that counts as showing up.
 - **Temptation bundle:** I only get ______________________ during the block.
-- **Environment:** the night before, I ______________________________.
+- **Environment:** before I pray Isha, I ______________________________ (laptop open, notebook out).
 - **Distraction friction:** during the block, my phone is ______________ and ______________ is blocked.
 - **Module reward list:** when I finish a module I get ______________________.
 - **Accountability partner:** ______________ (see `templates/habit-contract.md`).
